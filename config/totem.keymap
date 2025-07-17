@@ -111,10 +111,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp ESC    &trans     &kp UP    &kp EQUAL  &kp LBRC    &kp RBRC  &kp N7        &kp N8        &kp N9        &kp KP_PLUS
-        &kp LSHFT  &kp LEFT   &kp DOWN  &kp RIGHT  &kp LBKT    &kp RBKT  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_MINUS
-&trans  &kp DEL    &kp PG_UP  &kp CAPS  &kp PG_DN  &kp LPAR    &kp RPAR  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY  &kp UNDER
-                              &trans    &trans     &trans      &mo ADJ   &kp N0        &trans
+        &kp ESC    &kp LOCKING_NUM  &kp UP    &kp EQUAL  &kp LBRC    &kp RBRC  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS
+        &kp LSHFT  &kp LEFT         &kp DOWN  &kp RIGHT  &kp LBKT    &kp RBKT  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS
+&trans  &kp DEL    &kp PG_UP        &kp CAPS  &kp PG_DN  &kp LPAR    &kp RPAR  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_MULTIPLY  &kp KP_ENTER
+                                    &trans    &trans     &trans      &mo ADJ   &kp KP_NUMBER_0  &kp KP_DOT
             >;
         };
 
@@ -137,10 +137,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp EXCL     &kp AT       &kp HASH   &kp DLLR  &kp PRCNT    &kp CARET     &kp AMPS        &kp ASTERISK  &kp SQT     &kp DQT
-        &kp RA(A)    &trans       &kp RA(S)  &trans    &trans       &kp C_MUTE    &kp LS(RA(N4))  &kp RA(N5)    &kp RA(N4)  &kp RA(O)
-&trans  &kp RA(F18)  &kp RA(F19)  &trans     &kp HOME  &kp END      &kp C_VOL_DN  &kp C_VOL_UP    &kp C_PREV    &kp C_NEXT  &kp BSLH   &trans
-                                  &trans     &gif      &mo ADJ      &trans        &kp C_PP        &trans
+           &kp EXCL     &kp AT       &kp HASH   &kp DLLR  &kp PRCNT    &kp CARET     &kp AMPS        &kp ASTERISK  &kp SQT     &kp DQT
+           &kp RA(A)    &trans       &kp RA(S)  &trans    &trans       &kp C_MUTE    &kp LS(RA(N4))  &kp RA(N5)    &kp RA(N4)  &kp RA(O)
+&kp GRAVE  &kp RA(F18)  &kp RA(F19)  &trans     &kp HOME  &kp END      &kp C_VOL_DN  &kp C_VOL_UP    &kp C_PREV    &kp C_NEXT  &kp BSLH   &kp UNDERSCORE
+                                     &trans     &gif      &mo ADJ      &trans        &kp C_PP        &trans
             >;
         };
 
@@ -163,10 +163,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &sys_reset   &bt BT_CLR  &out OUT_TOG  &trans  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F12
-        &bootloader  &bt BT_NXT  &trans        &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
-&trans  &trans       &bt BT_PRV  &trans        &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
-                                 &trans        &trans  &trans    &trans  &trans  &trans
+                &sys_reset   &bt BT_CLR  &out OUT_TOG  &trans        &bt BT_SEL 2    &trans  &kp F7  &kp F8  &kp F9  &kp F12
+                &bootloader  &bt BT_NXT  &trans        &bt BT_SEL 4  &bt BT_SEL 1    &trans  &kp F4  &kp F5  &kp F6  &kp F11
+&bt BT_CLR_ALL  &trans       &bt BT_PRV  &trans        &bt BT_SEL 3  &bt BT_SEL 0    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
+                                         &trans        &trans        &trans          &trans  &trans  &trans
             >;
         };
 
